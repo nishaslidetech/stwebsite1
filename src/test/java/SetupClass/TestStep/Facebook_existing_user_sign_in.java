@@ -73,6 +73,7 @@ public class Facebook_existing_user_sign_in extends Set{
 	public void user_go_to_free_ppts_page_old_fb() throws InterruptedException  {
 	 
 		//free ppt pg
+		 System.out.println("free_ppts_url  ="   +driver.getCurrentUrl());
 		Thread.sleep(5000);
 		Actions actions = new Actions(driver);
 		WebElement free_ppt_btn1=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='menu-link'][normalize-space()='Free Stuff']")));
