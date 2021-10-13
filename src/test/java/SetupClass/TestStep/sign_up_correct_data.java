@@ -133,6 +133,7 @@ public class sign_up_correct_data extends Set {
 		WebElement new_btn_signup = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".submit")));
 		Thread.sleep(2000);
 	    new_btn_signup.click();
+		 System.out.println("After_signup_url ="   +driver.getCurrentUrl());
 		Thread.sleep(2000);
 	   
 	}
@@ -141,6 +142,7 @@ public class sign_up_correct_data extends Set {
 	public void user_lands_on_pricing_page_and_then_user_go_to_free_ppts_page_cd() throws InterruptedException  {
 		
 		Thread.sleep(2000);
+		 System.out.println("free_ppts_url  ="   +driver.getCurrentUrl());
 		/*WebElement free_ppt_btn=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(.,'Free PPTs')]")));
 		Thread.sleep(2000);
 	    free_ppt_btn.click();
