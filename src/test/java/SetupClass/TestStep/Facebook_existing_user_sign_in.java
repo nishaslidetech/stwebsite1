@@ -28,6 +28,7 @@ public class Facebook_existing_user_sign_in extends Set{
 		Thread.sleep(5000);
 
 		try {
+			 System.out.println("pop_up_url  ="   +driver.getCurrentUrl());
 			driver.findElement(By.cssSelector("div.social-login-authentication-channel:nth-child(3) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)")).click();
 			Thread.sleep(2000);
 			log.info("It's opening the website URL");
@@ -78,7 +79,8 @@ public class Facebook_existing_user_sign_in extends Set{
 		 System.out.println("free_ppts_url  ="   +driver.getCurrentUrl());
 		Thread.sleep(5000);
 		Actions actions = new Actions(driver);
-		WebElement free_ppt_btn1=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='menu-link'][normalize-space()='Free Stuff']")));
+		//WebElement free_ppt_btn1=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='menu-link'][normalize-space()='Free Stuff']")));
+		WebElement free_ppt_btn1=wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Free Stuff")));
 		actions.moveToElement(free_ppt_btn1).moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Free PPTs')]"))).click().build().perform();
 		Thread.sleep(7000);
 
