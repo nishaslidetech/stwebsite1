@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 //import gherkin.formatter.MonochromeFormats;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {"."}, tags= {"@facebook_new_account_sign_in"},
+@CucumberOptions(features = {"."}, //tags= {"@facebook_new_account_sign_in"},
 plugin= {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json","usage:target/usage.jsonx","junit:target/cucumber.xml"}//,
 //monochrome = true, //display the console output in a proper readable format
 //strict = true, //it will check if any step is not defined in step definition file
