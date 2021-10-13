@@ -41,7 +41,7 @@ public class Facebook_existing_user_sign_in extends Set{
 	@Then("^User click on sign in with facebook button old fb$")
 	public void user_click_on_sign_in_with_facebook_button_old_fb() throws InterruptedException  {
 		
-		driver.get("https://www.slideteam.net/");
+		//driver.get("https://www.slideteam.net/");
 		Thread.sleep(4000);
 		WebElement fb_link = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='btn btn-block btn-social btn-facebook social-btn']")));
 		Thread.sleep(2000);
@@ -52,13 +52,13 @@ public class Facebook_existing_user_sign_in extends Set{
 	    WebElement fb_email = wait.until(ExpectedConditions.elementToBeClickable(By.id("email")));
 		Thread.sleep(2000);
 		 fb_email.clear();
-	    fb_email.sendKeys("amw.vrushali@gmail.com");
+	    fb_email.sendKeys("nishadhiman0027@gmail.com");
 		Thread.sleep(2000);
 
 	    WebElement fb_pass = wait.until(ExpectedConditions.elementToBeClickable(By.id("pass")));
 		Thread.sleep(2000);
 		fb_pass.clear();
-	    fb_pass.sendKeys("vrushali@786");
+	    fb_pass.sendKeys("Qwerty@1");
 		Thread.sleep(2000);
 
 	    
