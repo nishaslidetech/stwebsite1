@@ -55,11 +55,13 @@ public class Facebook_new_account_sign_in extends Set {
 
 		 WebElement fb_email = wait.until(ExpectedConditions.elementToBeClickable(By.id("email")));
 			Thread.sleep(2000);
+		      fb_email.clear();
 		    fb_email.sendKeys("amw.vrushali@gmail.com");
 			Thread.sleep(2000);
 
 		    WebElement fb_pass = wait.until(ExpectedConditions.elementToBeClickable(By.id("pass")));
 			Thread.sleep(2000);
+		   fb_pass.clear();
 		    fb_pass.sendKeys("vrushali@786");
 			Thread.sleep(2000);
 
