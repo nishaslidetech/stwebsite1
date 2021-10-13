@@ -239,6 +239,7 @@ public class paypal_checkout extends Set {
 		   if(!handle.equals(currentWindow)){
 		    
 		    popupWindowHandle = handle;
+			   Thread.sleep(2000);
 		     driver.switchTo().window(popupWindowHandle);
 		   }
 		  }
