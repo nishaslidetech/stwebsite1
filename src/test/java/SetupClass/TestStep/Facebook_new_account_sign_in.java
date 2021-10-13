@@ -40,6 +40,8 @@ public class Facebook_new_account_sign_in extends Set {
 		}
 		Thread.sleep(2000);
 		try {
+			driver.manage().deleteAllCookies();
+			Thread.sleep(8000);
 			driver.findElement(By.xpath("//a[contains(text(),'Sign in with Facebook')]")).click();
 			Thread.sleep(2000);
 			log.info("It's opening the website URL");
@@ -52,7 +54,7 @@ public class Facebook_new_account_sign_in extends Set {
 	@Then("^User click on sign in with facebook button$")
 	public void user_click_on_sign_in_with_facebook_button() throws InterruptedException  {
 		Thread.sleep(2000);
-
+                
 		 WebElement fb_email = wait.until(ExpectedConditions.elementToBeClickable(By.id("email")));
 			Thread.sleep(2000);
 		      fb_email.clear();
