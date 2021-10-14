@@ -40,7 +40,7 @@ public class Facebook_new_account_sign_in extends Set {
 		}
 		Thread.sleep(2000);
 		try {
-			driver.manage().deleteAllCookies();
+			//driver.manage().deleteAllCookies();
 			Thread.sleep(8000);
 			driver.findElement(By.xpath("//a[contains(text(),'Sign in with Facebook')]")).click();
 			Thread.sleep(2000);
