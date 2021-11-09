@@ -42,7 +42,7 @@ public class Facebook_existing_user_sign_in extends Set{
 	public void user_click_on_sign_in_with_facebook_button_old_fb() throws InterruptedException  {
 		
 		//driver.get("https://www.slideteam.net/");
-		Thread.sleep(4000);
+		/*Thread.sleep(4000);
 		WebElement fb_link = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='btn btn-block btn-social btn-facebook social-btn']")));
 		Thread.sleep(2000);
 	    fb_link.click();
@@ -76,13 +76,13 @@ public class Facebook_existing_user_sign_in extends Set{
 	public void user_go_to_free_ppts_page_old_fb() throws InterruptedException  {
 	 
 		//free ppt pg
-		 System.out.println("free_ppts_url  ="   +driver.getCurrentUrl());
+		/* System.out.println("free_ppts_url  ="   +driver.getCurrentUrl());
 		Thread.sleep(5000);
 		Actions actions = new Actions(driver);
 		//WebElement free_ppt_btn1=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='menu-link'][normalize-space()='Free Stuff']")));
 		WebElement free_ppt_btn1=wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Free Stuff")));
 		actions.moveToElement(free_ppt_btn1).moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Free PPTs')]"))).click().build().perform();
-		Thread.sleep(7000);
+		Thread.sleep(7000);*/
 
 	}
 
