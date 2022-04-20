@@ -98,7 +98,7 @@ public class Facebook_existing_user_sign_in extends Set{
 		Thread.sleep(3000);
 		
 		
-		WebElement download_btn_pdp = driver.findElement(By.cssSelector("#clicking"));
+		WebElement download_btn_pdp = driver.findElement(By.xpath("//button[normalize-space()='Download this presentation']"));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();",download_btn_pdp);	
 		Thread.sleep(2000);
