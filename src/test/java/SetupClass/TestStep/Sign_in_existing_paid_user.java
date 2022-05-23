@@ -58,13 +58,13 @@ public void user_click_on_login_button_epu() throws InterruptedException  {
    
 	 WebElement old_paid_login_btn=wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.login > span:nth-child(1)")));
 	    old_paid_login_btn.click();
+	Thread.sleep(6000);
 }
 
 @Then("^user navigate to complete deck from account dashboard page$")
 public void user_navigate_to_complete_deck_from_account_dashboard_page() throws InterruptedException  {
     
-	 driver.get("https://www.slideteam.net/complete-powerpoint-decks-presentations/all-powerpoint-complete-decks.html");
-	 Thread.sleep(3000);
+	
 	 
 	// WebElement select_product=wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("li.product:nth-child(1) > div:nth-child(1) > div:nth-child(2) > strong:nth-child(1) > span:nth-child(1) > a:nth-child(1)")));
 	  //Thread.sleep(2000);   
